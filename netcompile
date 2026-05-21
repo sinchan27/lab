@@ -1,0 +1,22 @@
+#1
+gcc tcp_server.c -o tcp_server
+gcc tcp_client.c -o tcp_client
+./tcp_server # Run in Terminal 1
+./tcp_client # Run in Terminal 2
+#2
+gcc udp_server.c -o udp_server
+gcc udp_client.c -o udp_client
+./udp_server # Run in Terminal 1
+./udp_client # Run in Terminal 2
+#3
+gcc multi_server.c -o multi_server -pthread
+./multi_server
+#4
+gcc broadcast_receiver.c -o broadcast_receiver
+gcc broadcast_sender.c -o broadcast_sender
+./broadcast_receiver # Run one or more of these first
+./broadcast_sender   # Then run the sender to broadcast
+
+#5
+gcc display_info_server.c -o display_info_server
+./display_info_server
